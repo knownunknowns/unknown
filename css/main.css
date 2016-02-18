@@ -1,0 +1,8 @@
+@font-face {
+  font-family: akkuratBold;
+  src: url(akkuratBold.ttf); }
+@font-face {
+  font-family: garamond;
+  src: url(garamond.ttf); }
+body {
+  color: #fff; }
