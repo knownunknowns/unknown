@@ -1,0 +1,102 @@
+.landing
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    position: static
+    h1
+        position: absolute
+        font-weight: bold
+        bottom: 0em
+        font-family: $akkurat
+        line-height: 100%
+        z-index: 2
+        @include fontSizes
+        a
+            color: $orange
+            text-decoration: none
+    .search
+        input
+            position: absolute
+            height: 1.125em!important
+            z-index: 100
+            margin-bottom: 1em
+            border: none!important
+            padding: 0!important
+            outline: none!important
+            box-shadow: none !important
+            font-weight: bold
+            color: $orange !important
+            font-family: $akkurat !important
+            background-color: transparent
+            width: 95%
+            @include fontSizes
+            text-transform: capitalize !important
+            &:valid
+                background-color: rgba(255,255,255,0.5)
+            &:focus
+                background-color: rgba(255,255,255,0.5)
+            &:valid +.cursor,
+            &:focus + .cursor
+                display: none
+            &:focus +.cursor + #autocomplete
+                color: $orange!important
+                visibility: visible
+            &:valid +.cursor + #autocomplete
+                color: $orange!important
+                visibility: visible
+            & + .cursor
+                @include fontSizes
+                font-family: $akkurat
+                position: absolute
+                margin-bottom: 1em
+                display: block
+                height: 1em
+                left: 3.4em
+                border-left: 2px solid $orange
+                @include blink
+    .description
+        bottom: 60%
+        width: 80%
+        position: absolute
+.tagCloud
+    padding-top: 4em
+    overflow-x: hidden
+    h2
+        display: none
+    ul
+        li
+            display: block
+            a
+                line-height: 150%
+                font-size: 1em
+                color: $body
+                text-decoration: none
+                text-transform: uppercase
+                font-weight: bold
+            &.tagcolum-0
+                padding-left: 11 / 12 *100%
+            &.tagcolum-1
+                padding-left: -1 / 12 *100%
+            &.tagcolum-2
+                padding-left: 0 / 12 *100%
+            &.tagcolum-3
+                padding-left: 1 / 12 *100%
+            &.tagcolum-4
+                padding-left: 2 / 12 *100%
+            &.tagcolum-5
+                padding-left: 3 / 12 *100%
+            &.tagcolum-6
+                padding-left: 4 / 12 *100%
+            &.tagcolum-7
+                padding-left: 5 / 12 *100%
+            &.tagcolum-8
+                padding-left: 6 / 12 *100%
+            &.tagcolum-9
+                padding-left: 7 / 12 *100%
+            &.tagcolum-10
+                padding-left: 8 / 12 *100%
+            &.tagcolum-11
+                padding-left: 9 / 12 *100%
+            &.tagcolum-12
+                padding-left: 10 / 12 *100%

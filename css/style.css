@@ -1,0 +1,514 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: ""; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: akkurat;
+  font-weight: bold;
+  src: url(/Themes/unknown/assets/Akkurat-Bold.woff2) format(woff2), url(/Themes/unknown/assets/assets/Akkurat-Bold.woff) format(woff), url(/Themes/unknown/assets/assets/Akkurat-Bold.ttf) format(truetype); }
+@font-face {
+  font-family: akkurat;
+  src: url(/Themes/unknown/assets/Akkurat.woff2) format(woff2), url(/Themes/unknown/assets/assets/Akkurat.woff) format(woff), url(/Themes/unknown/assets/assets/Akkurat.ttf) format(truetype); }
+html, body {
+  height: 100%;
+  width: 100%; }
+
+html {
+  overflow-y: scroll; }
+
+.pageWrap {
+  height: 100%; }
+
+.content {
+  padding: 1em;
+  height: 100%;
+  padding-top: 4em; }
+  .content article {
+    max-width: 50rem; }
+    .content article.fw {
+      max-width: none;
+      overflow: hidden; }
+
+h1 {
+  font-family: akkurat, helvetica, sans-serif;
+  color: #FA846C;
+  font-size: 3em;
+  text-transform: capitalize;
+  padding-bottom: 3rem; }
+
+p {
+  padding-bottom: 0.5em; }
+
+a {
+  color: #FA846C;
+  text-decoration: none; }
+
+h2 {
+  font-family: akkurat, helvetica, sans-serif;
+  font-weight: bold; }
+
+body {
+  color: #172E36;
+  font-family: akkurat, helvetica, sans-serif;
+  font-size: 16px; }
+  @media (min-width: 800px) {
+    body {
+      font-size: 20px; } }
+
+article h1 {
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: normal;
+  padding-bottom: 1rem; }
+article h2 {
+  font-size: 2em;
+  padding-bottom: 1rem;
+  font-weight: normal;
+  color: #FA846C;
+  text-transform: capitalize;
+  line-height: 2.8rem; }
+
+@keyframes blink-animation {
+  to {
+    border-left: none; } }
+@-webkit-keyframes blink-animation {
+  to {
+    border-left: none; } }
+@-moz-keyframes blink-animation {
+  to {
+    border-left: none; } }
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100; }
+  .nav ul {
+    background-color: white;
+    padding: 1em; }
+    .nav ul li {
+      width: 32%;
+      list-style-position: inside;
+      display: inline-block;
+      list-style-type: none; }
+      .nav ul li:nth-child(2) {
+        text-align: center;
+        border-left: 2px solid black;
+        border-right: 2px solid black; }
+      .nav ul li:nth-child(3) {
+        text-align: right; }
+      .nav ul li a {
+        color: #172E36;
+        font-family: akkurat, helvetica, sans-serif;
+        text-decoration: none; }
+
+.landing {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: static; }
+  .landing h1 {
+    position: absolute;
+    font-weight: bold;
+    bottom: 0em;
+    font-family: akkurat, helvetica, sans-serif;
+    line-height: 100%;
+    z-index: 2;
+    font-size: 3em;
+    bottom: -0.4em; }
+    @media (min-width: 350px) {
+      .landing h1 {
+        font-size: 4em;
+        bottom: -0.5em; } }
+    @media (min-width: 400px) {
+      .landing h1 {
+        font-size: 5em;
+        bottom: -0.5em; } }
+    @media (min-width: 500px) {
+      .landing h1 {
+        font-size: 6em;
+        bottom: -0.3em; } }
+    @media (min-width: 600px) {
+      .landing h1 {
+        font-size: 7em;
+        bottom: -0.3em; } }
+    @media (min-width: 700px) {
+      .landing h1 {
+        font-size: 8em;
+        bottom: -0.3em; } }
+    @media (min-width: 800px) {
+      .landing h1 {
+        font-size: 4em;
+        bottom: -0.5em; } }
+    @media (min-width: 900px) {
+      .landing h1 {
+        bottom: -0.5em;
+        font-size: 9em; } }
+    @media (min-width: 1000px) {
+      .landing h1 {
+        bottom: -0.5em;
+        font-size: 11em; } }
+    @media (min-width: 1100px) {
+      .landing h1 {
+        bottom: -0.5em;
+        font-size: 12em; } }
+    @media (min-width: 1200px) {
+      .landing h1 {
+        bottom: -0.5em;
+        font-size: 13em; } }
+    @media (min-width: 1300px) {
+      .landing h1 {
+        bottom: -0.5em;
+        font-size: 14em; } }
+    @media (min-width: 1400px) {
+      .landing h1 {
+        bottom: -0.5em;
+        font-size: 15em; } }
+    .landing h1 a {
+      color: #FA846C;
+      text-decoration: none; }
+  .landing .search input {
+    position: absolute;
+    height: 1.125em !important;
+    z-index: 100;
+    margin-bottom: 1em;
+    border: none !important;
+    padding: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    font-weight: bold;
+    color: #FA846C !important;
+    font-family: akkurat, helvetica, sans-serif !important;
+    background-color: transparent;
+    width: 95%;
+    font-size: 3em;
+    bottom: -0.4em;
+    text-transform: capitalize !important; }
+    @media (min-width: 350px) {
+      .landing .search input {
+        font-size: 4em;
+        bottom: -0.5em; } }
+    @media (min-width: 400px) {
+      .landing .search input {
+        font-size: 5em;
+        bottom: -0.5em; } }
+    @media (min-width: 500px) {
+      .landing .search input {
+        font-size: 6em;
+        bottom: -0.3em; } }
+    @media (min-width: 600px) {
+      .landing .search input {
+        font-size: 7em;
+        bottom: -0.3em; } }
+    @media (min-width: 700px) {
+      .landing .search input {
+        font-size: 8em;
+        bottom: -0.3em; } }
+    @media (min-width: 800px) {
+      .landing .search input {
+        font-size: 4em;
+        bottom: -0.5em; } }
+    @media (min-width: 900px) {
+      .landing .search input {
+        bottom: -0.5em;
+        font-size: 9em; } }
+    @media (min-width: 1000px) {
+      .landing .search input {
+        bottom: -0.5em;
+        font-size: 11em; } }
+    @media (min-width: 1100px) {
+      .landing .search input {
+        bottom: -0.5em;
+        font-size: 12em; } }
+    @media (min-width: 1200px) {
+      .landing .search input {
+        bottom: -0.5em;
+        font-size: 13em; } }
+    @media (min-width: 1300px) {
+      .landing .search input {
+        bottom: -0.5em;
+        font-size: 14em; } }
+    @media (min-width: 1400px) {
+      .landing .search input {
+        bottom: -0.5em;
+        font-size: 15em; } }
+    .landing .search input:valid {
+      background-color: rgba(255, 255, 255, 0.5); }
+    .landing .search input:focus {
+      background-color: rgba(255, 255, 255, 0.5); }
+    .landing .search input:valid + .cursor, .landing .search input:focus + .cursor {
+      display: none; }
+    .landing .search input:focus + .cursor + #autocomplete {
+      color: #FA846C !important;
+      visibility: visible; }
+    .landing .search input:valid + .cursor + #autocomplete {
+      color: #FA846C !important;
+      visibility: visible; }
+    .landing .search input + .cursor {
+      font-size: 3em;
+      bottom: -0.4em;
+      font-family: akkurat, helvetica, sans-serif;
+      position: absolute;
+      margin-bottom: 1em;
+      display: block;
+      height: 1em;
+      left: 3.4em;
+      border-left: 2px solid #FA846C;
+      animation: blink-animation 1s steps(5, start) infinite;
+      -moz-animation: blink-animation 1s steps(5, start) infinite;
+      -webkit-animation: blink-animation 1s steps(5, start) infinite; }
+      @media (min-width: 350px) {
+        .landing .search input + .cursor {
+          font-size: 4em;
+          bottom: -0.5em; } }
+      @media (min-width: 400px) {
+        .landing .search input + .cursor {
+          font-size: 5em;
+          bottom: -0.5em; } }
+      @media (min-width: 500px) {
+        .landing .search input + .cursor {
+          font-size: 6em;
+          bottom: -0.3em; } }
+      @media (min-width: 600px) {
+        .landing .search input + .cursor {
+          font-size: 7em;
+          bottom: -0.3em; } }
+      @media (min-width: 700px) {
+        .landing .search input + .cursor {
+          font-size: 8em;
+          bottom: -0.3em; } }
+      @media (min-width: 800px) {
+        .landing .search input + .cursor {
+          font-size: 4em;
+          bottom: -0.5em; } }
+      @media (min-width: 900px) {
+        .landing .search input + .cursor {
+          bottom: -0.5em;
+          font-size: 9em; } }
+      @media (min-width: 1000px) {
+        .landing .search input + .cursor {
+          bottom: -0.5em;
+          font-size: 11em; } }
+      @media (min-width: 1100px) {
+        .landing .search input + .cursor {
+          bottom: -0.5em;
+          font-size: 12em; } }
+      @media (min-width: 1200px) {
+        .landing .search input + .cursor {
+          bottom: -0.5em;
+          font-size: 13em; } }
+      @media (min-width: 1300px) {
+        .landing .search input + .cursor {
+          bottom: -0.5em;
+          font-size: 14em; } }
+      @media (min-width: 1400px) {
+        .landing .search input + .cursor {
+          bottom: -0.5em;
+          font-size: 15em; } }
+  .landing .description {
+    bottom: 60%;
+    width: 80%;
+    position: absolute; }
+
+.tagCloud {
+  padding-top: 4em;
+  overflow-x: hidden; }
+  .tagCloud h2 {
+    display: none; }
+  .tagCloud ul li {
+    display: block; }
+    .tagCloud ul li a {
+      line-height: 150%;
+      font-size: 1em;
+      color: #172E36;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold; }
+    .tagCloud ul li.tagcolum-0 {
+      padding-left: 91.66667%; }
+    .tagCloud ul li.tagcolum-1 {
+      padding-left: -8.33333%; }
+    .tagCloud ul li.tagcolum-2 {
+      padding-left: 0%; }
+    .tagCloud ul li.tagcolum-3 {
+      padding-left: 8.33333%; }
+    .tagCloud ul li.tagcolum-4 {
+      padding-left: 16.66667%; }
+    .tagCloud ul li.tagcolum-5 {
+      padding-left: 25%; }
+    .tagCloud ul li.tagcolum-6 {
+      padding-left: 33.33333%; }
+    .tagCloud ul li.tagcolum-7 {
+      padding-left: 41.66667%; }
+    .tagCloud ul li.tagcolum-8 {
+      padding-left: 50%; }
+    .tagCloud ul li.tagcolum-9 {
+      padding-left: 58.33333%; }
+    .tagCloud ul li.tagcolum-10 {
+      padding-left: 66.66667%; }
+    .tagCloud ul li.tagcolum-11 {
+      padding-left: 75%; }
+    .tagCloud ul li.tagcolum-12 {
+      padding-left: 83.33333%; }
+
+#autocomplete {
+  position: absolute;
+  margin-bottom: 1em;
+  font-weight: bold;
+  font-family: akkurat, helvetica, sans-serif;
+  font-size: 3em;
+  bottom: -0.4em;
+  color: white;
+  text-transform: capitalize;
+  z-index: 50;
+  background-color: white;
+  width: 100%;
+  visibility: hidden;
+  height: 1em; }
+  @media (min-width: 350px) {
+    #autocomplete {
+      font-size: 4em;
+      bottom: -0.5em; } }
+  @media (min-width: 400px) {
+    #autocomplete {
+      font-size: 5em;
+      bottom: -0.5em; } }
+  @media (min-width: 500px) {
+    #autocomplete {
+      font-size: 6em;
+      bottom: -0.3em; } }
+  @media (min-width: 600px) {
+    #autocomplete {
+      font-size: 7em;
+      bottom: -0.3em; } }
+  @media (min-width: 700px) {
+    #autocomplete {
+      font-size: 8em;
+      bottom: -0.3em; } }
+  @media (min-width: 800px) {
+    #autocomplete {
+      font-size: 4em;
+      bottom: -0.5em; } }
+  @media (min-width: 900px) {
+    #autocomplete {
+      bottom: -0.5em;
+      font-size: 9em; } }
+  @media (min-width: 1000px) {
+    #autocomplete {
+      bottom: -0.5em;
+      font-size: 11em; } }
+  @media (min-width: 1100px) {
+    #autocomplete {
+      bottom: -0.5em;
+      font-size: 12em; } }
+  @media (min-width: 1200px) {
+    #autocomplete {
+      bottom: -0.5em;
+      font-size: 13em; } }
+  @media (min-width: 1300px) {
+    #autocomplete {
+      bottom: -0.5em;
+      font-size: 14em; } }
+  @media (min-width: 1400px) {
+    #autocomplete {
+      bottom: -0.5em;
+      font-size: 15em; } }
+
+.person h1 {
+  font-size: 2em;
+  color: #FA846C; }
+.person img.headerImg {
+  max-width: 100%;
+  padding-bottom: 1rem; }
+.person .intro {
+  font-family: akkurat, helvetica, sans-serif; }
+  .person .intro h3 {
+    text-transform: uppercase;
+    line-height: 100%;
+    font-size: 2rem;
+    line-height: 150%; }
+
+.inStream article {
+  padding-top: 3rem; }
+  .inStream article:first-child {
+    padding-top: 1rem; }
+  .inStream article h1, .inStream article .shortText {
+    font-weight: normal;
+    color: #172E36;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-size: 1.5rem; }
+  .inStream article img {
+    max-width: 90%;
+    margin: 1rem auto;
+    display: block; }
+  .inStream article ul.tags li {
+    display: inline-block; }
+    .inStream article ul.tags li a {
+      text-decoration: none;
+      color: #FA846C; }
+      .inStream article ul.tags li a:before {
+        content: "#";
+        position: relative;
+        left: 0.3rem; }
+
+table, tbody, tr {
+  display: block;
+  text-align: left; }
+
+tr {
+  width: 300%; }
+
+td, th {
+  display: inline-block; }
+  td a, th a {
+    color: #172E36; }
+  td.fn, th.fn {
+    width: 10rem; }
+  td.ln, th.ln {
+    width: 10rem; }
+  td.pr, th.pr {
+    position: relative; }
+@media(max-width : 900px) {
+  td.pr, th.pr {
+    display: none; } }
+th {
+  text-transform: uppercase; }
