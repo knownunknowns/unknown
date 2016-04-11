@@ -35,9 +35,6 @@
         <?= htmlentities(strip_tags($vars['user']->projTitle), ENT_QUOTES, 'UTF-8') ?>
     </h2>
     <section class="intro">
-        <h3>
-            Introduction
-        </h3>
         <?php
             $description = $vars['user']->getDescription();
             if (!empty($description)) {
