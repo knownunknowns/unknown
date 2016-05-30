@@ -17,7 +17,7 @@
                 </div>
             </div>
         </div>-->
-    <a href="<?= $vars['user']->getDisplayURL() ?>" class=""><img class="headerImg" src="<?= $vars['user']->getIcon() ?>"/></a>
+    <a href="<?= $vars['user']->getDisplayURL() ?>" class="profileWrap"><img class="headerImg" src="<?= $vars['user']->getIcon() ?>"/></a>
         <?php
             if ($vars['user']->canEdit() && $vars['user']->getUUID() == \Idno\Core\Idno::site()->session()->currentUserUUID()) {
         ?>
@@ -35,6 +35,9 @@
         <?= htmlentities(strip_tags($vars['user']->projTitle), ENT_QUOTES, 'UTF-8') ?>
     </h2>
     <section class="intro">
+    <h3>
+        introduction
+    </h3>
         <?php
             $description = $vars['user']->getDescription();
             if (!empty($description)) {
