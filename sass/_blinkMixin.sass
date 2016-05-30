@@ -1,0 +1,14 @@
+@mixin blink
+    animation: blink-animation 1s steps(5, start) infinite
+    -moz-animation: blink-animation 1s steps(5, start) infinite
+    -webkit-animation: blink-animation 1s steps(5, start) infinite
+
+@keyframes blink-animation 
+    to 
+        border-left: none
+@-webkit-keyframes blink-animation 
+    to 
+        border-left: none
+@-moz-keyframes blink-animation 
+    to 
+        border-left: none

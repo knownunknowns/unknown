@@ -1,0 +1,25 @@
+.knunnav
+    position: fixed
+    width: 100%
+    top: 0
+    z-index: 100
+    ul
+        background-color: $background
+        padding: 1em 
+        li
+            width: 32%
+            list-style-position: inside
+            display: inline-block
+            list-style-type: none
+            &:nth-child(2)
+                text-align: center
+                $bordersep: 2px solid black
+                border-left: $bordersep
+                border-right: $bordersep
+            &:nth-child(3)
+                text-align: right
+            a
+                color: $teal
+                font-family: $akkurat
+                text-decoration: none
+
