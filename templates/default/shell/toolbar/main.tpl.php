@@ -17,7 +17,7 @@
       </li>
     </ul>
 </div>
-<?if (\Idno\Core\Idno::site()->session()->isLoggedOn() ): ?>
+<?php if (\Idno\Core\Idno::site()->session()->isLoggedOn() ): ?>
 <a href="#maincontent" style="display:none">Skip to main content</a>
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
