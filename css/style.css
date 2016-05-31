@@ -168,15 +168,15 @@ article h2 {
     @media (min-width: 500px) {
       .landing h1 {
         font-size: 6em;
-        bottom: -0.3em; } }
+        bottom: -0.3663em; } }
     @media (min-width: 600px) {
       .landing h1 {
         font-size: 7em;
-        bottom: -0.3em; } }
+        bottom: -0.3663em; } }
     @media (min-width: 700px) {
       .landing h1 {
         font-size: 8em;
-        bottom: -0.3em; } }
+        bottom: -0.3663em; } }
     @media (min-width: 800px) {
       .landing h1 {
         font-size: 4em;
@@ -208,144 +208,146 @@ article h2 {
     .landing h1 a {
       color: #FA846C;
       text-decoration: none; }
-  .landing .search input {
-    position: absolute;
-    height: 1.13em !important;
-    z-index: 100;
-    margin-bottom: 1em;
-    border: none !important;
-    padding: 0 !important;
-    outline: none !important;
-    box-shadow: none !important;
-    font-weight: bold;
-    color: #FA846C !important;
-    font-family: akkurat, helvetica, sans-serif !important;
-    background-color: transparent;
-    width: 95%;
-    font-size: 3em;
-    bottom: -0.4em;
-    text-transform: capitalize !important; }
-    @media (min-width: 350px) {
-      .landing .search input {
-        font-size: 4em;
-        bottom: -0.5663em; } }
-    @media (min-width: 400px) {
-      .landing .search input {
-        font-size: 5em;
-        bottom: -0.5663em; } }
-    @media (min-width: 500px) {
-      .landing .search input {
-        font-size: 6em;
-        bottom: -0.3em; } }
-    @media (min-width: 600px) {
-      .landing .search input {
-        font-size: 7em;
-        bottom: -0.3em; } }
-    @media (min-width: 700px) {
-      .landing .search input {
-        font-size: 8em;
-        bottom: -0.3em; } }
-    @media (min-width: 800px) {
-      .landing .search input {
-        font-size: 4em;
-        bottom: -0.5663em; } }
-    @media (min-width: 900px) {
-      .landing .search input {
-        bottom: -0.5663em;
-        font-size: 9em; } }
-    @media (min-width: 1000px) {
-      .landing .search input {
-        bottom: -0.5663em;
-        font-size: 11em; } }
-    @media (min-width: 1100px) {
-      .landing .search input {
-        bottom: -0.5663em;
-        font-size: 12em; } }
-    @media (min-width: 1200px) {
-      .landing .search input {
-        bottom: -0.5663em;
-        font-size: 13em; } }
-    @media (min-width: 1300px) {
-      .landing .search input {
-        bottom: -0.5663em;
-        font-size: 14em; } }
-    @media (min-width: 1400px) {
-      .landing .search input {
-        bottom: -0.5663em;
-        font-size: 15em; } }
-    .landing .search input:valid {
-      background-color: rgba(255, 255, 255, 0.5); }
-    .landing .search input:focus {
-      background-color: rgba(255, 255, 255, 0.5); }
-    .landing .search input:valid + .cursor, .landing .search input:focus + .cursor {
-      display: none; }
-    .landing .search input:focus + .cursor + #autocomplete {
+  .landing .search {
+    overflow-x: hidden; }
+    .landing .search input {
+      position: absolute;
+      height: 1.13em !important;
+      z-index: 100;
+      margin-bottom: 1em;
+      border: none !important;
+      padding: 0 !important;
+      outline: none !important;
+      box-shadow: none !important;
+      font-weight: bold;
       color: #FA846C !important;
-      visibility: visible; }
-    .landing .search input:valid + .cursor + #autocomplete {
-      color: #FA846C !important;
-      visibility: visible; }
-    .landing .search input + .cursor {
+      font-family: akkurat, helvetica, sans-serif !important;
+      background-color: transparent;
+      width: 110%;
       font-size: 3em;
       bottom: -0.4em;
-      font-family: akkurat, helvetica, sans-serif;
-      position: absolute;
-      margin-bottom: 1em;
-      display: block;
-      height: 1.1em;
-      left: 3.4em;
-      border-left: 2px solid #FA846C;
-      animation: blink-animation 1s steps(5, start) infinite;
-      -moz-animation: blink-animation 1s steps(5, start) infinite;
-      -webkit-animation: blink-animation 1s steps(5, start) infinite; }
+      text-transform: capitalize !important; }
       @media (min-width: 350px) {
-        .landing .search input + .cursor {
+        .landing .search input {
           font-size: 4em;
           bottom: -0.5663em; } }
       @media (min-width: 400px) {
-        .landing .search input + .cursor {
+        .landing .search input {
           font-size: 5em;
           bottom: -0.5663em; } }
       @media (min-width: 500px) {
-        .landing .search input + .cursor {
+        .landing .search input {
           font-size: 6em;
-          bottom: -0.3em; } }
+          bottom: -0.3663em; } }
       @media (min-width: 600px) {
-        .landing .search input + .cursor {
+        .landing .search input {
           font-size: 7em;
-          bottom: -0.3em; } }
+          bottom: -0.3663em; } }
       @media (min-width: 700px) {
-        .landing .search input + .cursor {
+        .landing .search input {
           font-size: 8em;
-          bottom: -0.3em; } }
+          bottom: -0.3663em; } }
       @media (min-width: 800px) {
-        .landing .search input + .cursor {
+        .landing .search input {
           font-size: 4em;
           bottom: -0.5663em; } }
       @media (min-width: 900px) {
-        .landing .search input + .cursor {
+        .landing .search input {
           bottom: -0.5663em;
           font-size: 9em; } }
       @media (min-width: 1000px) {
-        .landing .search input + .cursor {
+        .landing .search input {
           bottom: -0.5663em;
           font-size: 11em; } }
       @media (min-width: 1100px) {
-        .landing .search input + .cursor {
+        .landing .search input {
           bottom: -0.5663em;
           font-size: 12em; } }
       @media (min-width: 1200px) {
-        .landing .search input + .cursor {
+        .landing .search input {
           bottom: -0.5663em;
           font-size: 13em; } }
       @media (min-width: 1300px) {
-        .landing .search input + .cursor {
+        .landing .search input {
           bottom: -0.5663em;
           font-size: 14em; } }
       @media (min-width: 1400px) {
-        .landing .search input + .cursor {
+        .landing .search input {
           bottom: -0.5663em;
           font-size: 15em; } }
+      .landing .search input:valid {
+        background-color: rgba(255, 255, 255, 0.5); }
+      .landing .search input:focus {
+        background-color: rgba(255, 255, 255, 0.5); }
+      .landing .search input:valid + .cursor, .landing .search input:focus + .cursor {
+        display: none; }
+      .landing .search input:focus + .cursor + #autocomplete {
+        color: #FA846C !important;
+        visibility: visible; }
+      .landing .search input:valid + .cursor + #autocomplete {
+        color: #FA846C !important;
+        visibility: visible; }
+      .landing .search input + .cursor {
+        font-size: 3em;
+        bottom: -0.4em;
+        font-family: akkurat, helvetica, sans-serif;
+        position: absolute;
+        margin-bottom: 1em;
+        display: block;
+        height: 1.1em;
+        left: 3.4em;
+        border-left: 2px solid #FA846C;
+        animation: blink-animation 1s steps(5, start) infinite;
+        -moz-animation: blink-animation 1s steps(5, start) infinite;
+        -webkit-animation: blink-animation 1s steps(5, start) infinite; }
+        @media (min-width: 350px) {
+          .landing .search input + .cursor {
+            font-size: 4em;
+            bottom: -0.5663em; } }
+        @media (min-width: 400px) {
+          .landing .search input + .cursor {
+            font-size: 5em;
+            bottom: -0.5663em; } }
+        @media (min-width: 500px) {
+          .landing .search input + .cursor {
+            font-size: 6em;
+            bottom: -0.3663em; } }
+        @media (min-width: 600px) {
+          .landing .search input + .cursor {
+            font-size: 7em;
+            bottom: -0.3663em; } }
+        @media (min-width: 700px) {
+          .landing .search input + .cursor {
+            font-size: 8em;
+            bottom: -0.3663em; } }
+        @media (min-width: 800px) {
+          .landing .search input + .cursor {
+            font-size: 4em;
+            bottom: -0.5663em; } }
+        @media (min-width: 900px) {
+          .landing .search input + .cursor {
+            bottom: -0.5663em;
+            font-size: 9em; } }
+        @media (min-width: 1000px) {
+          .landing .search input + .cursor {
+            bottom: -0.5663em;
+            font-size: 11em; } }
+        @media (min-width: 1100px) {
+          .landing .search input + .cursor {
+            bottom: -0.5663em;
+            font-size: 12em; } }
+        @media (min-width: 1200px) {
+          .landing .search input + .cursor {
+            bottom: -0.5663em;
+            font-size: 13em; } }
+        @media (min-width: 1300px) {
+          .landing .search input + .cursor {
+            bottom: -0.5663em;
+            font-size: 14em; } }
+        @media (min-width: 1400px) {
+          .landing .search input + .cursor {
+            bottom: -0.5663em;
+            font-size: 15em; } }
   .landing .description {
     bottom: 60%;
     width: 80%;
@@ -403,7 +405,7 @@ article h2 {
   text-transform: capitalize;
   z-index: 50;
   background-color: white;
-  width: 100%;
+  width: 400%;
   visibility: hidden;
   height: 1em; }
   @media (min-width: 350px) {
