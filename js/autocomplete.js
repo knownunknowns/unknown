@@ -22,7 +22,10 @@ $(document).ready(function() {
 	    $("#autocomplete").html(result)
 	}
 	$(document).keydown(function(e){
-		$("#searchBar").focus();
+            if ($("#searchbar").is(":focus") == false){
+                $("#searchBar").val("");
+                $("#searchBar").focus();
+            }
 	})
 	$("#searchBar").keydown(function(e){
 	    if (e.which == 13){
