@@ -461,8 +461,9 @@ article h2 {
       font-size: 15em; } }
 
 .person h1 {
-  font-size: 2em;
-  color: #FA846C; }
+  font-size: 2em; }
+  .person h1 a {
+    color: black; }
 .person a.profileWrap {
   height: 0;
   padding-bottom: 50%;
