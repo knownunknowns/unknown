@@ -80,9 +80,7 @@
                         <?= $this->draw('content/end') ?>
                     </div>
                 </div>
-
-            </div>
-
+            </article>
         <?php
         }
     }
