@@ -469,9 +469,9 @@ article h2 {
   overflow: hidden;
   display: block;
   position: relative; }
-.person img.headerImg {
-  max-width: 100%;
-  padding-bottom: 1rem; }
+  .person a.profileWrap img.headerImg {
+    width: 100%;
+    padding-bottom: 1rem; }
 .person .intro {
   font-family: akkurat, helvetica, sans-serif; }
   .person .intro h3 {
@@ -510,8 +510,10 @@ article.process {
         content: "#";
         position: relative;
         left: 0.3rem; }
-  article.process .footer .permalink, article.process .footer .interactions {
-    display: inline-block; }
+  article.process .footer {
+    padding-top: 1rem; }
+    article.process .footer .permalink, article.process .footer .interactions {
+      display: inline-block; }
 
 table, tbody, tr {
   display: block;
