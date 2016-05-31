@@ -500,7 +500,7 @@ article.process {
     article.process h1 a, article.process h2 a, article.process .shortText a {
       color: black; }
   article.process img {
-    width: 100%;
+    max-width: 100%;
     display: block; }
   article.process ul.tags li {
     display: inline-block; }
