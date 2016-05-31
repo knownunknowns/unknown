@@ -436,6 +436,7 @@
 <!-- HTML5 form element support for legacy browsers -->
 <script src="<?= \Idno\Core\Idno::site()->config()->getDisplayURL() . 'external/h5f/h5f.min.js' ?>"></script>
 
+<script src="<?= \Idno\Core\Idno::site()->config()->getStaticURL() ?>Themes/unknown/js/autocomplete.js"></script>
 <script src="<?= \Idno\Core\Idno::site()->config()->getStaticURL() . 'js/'. \Idno\Core\Idno::site()->machineVersion() . '/templates/default/shell.js' ?>"></script>
 <script src="<?= \Idno\Core\Idno::site()->config()->getStaticURL() . 'js/'. \Idno\Core\Idno::site()->machineVersion() . '/embeds.js' ?>"></script>
 
