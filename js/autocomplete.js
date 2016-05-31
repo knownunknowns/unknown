@@ -37,4 +37,11 @@ $(document).ready(function() {
 	        completion($("#searchBar").val())["string"]
 	    )
 	})
+        $("#tagsLink").click(function(){
+                $('html, body').animate({
+                            scrollTop: $( $.attr(this, 'href') ).offset().top
+                                }, 500);
+                    return false;
+        });
+
 })
