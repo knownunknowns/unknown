@@ -224,8 +224,8 @@ article h2 {
       font-weight: bold;
       color: #FA846C !important;
       font-family: akkurat, helvetica, sans-serif !important;
-      background-color: rgba(255, 255, 255, 0.5);
       width: 90%;
+      background-color: white;
       font-size: 3em;
       bottom: -0.4em;
       text-transform: capitalize !important; }
@@ -407,7 +407,8 @@ article h2 {
   text-transform: capitalize;
   z-index: 50;
   background-color: white;
-  width: 400%;
+  width: 100%;
+  overflow: hidden;
   visibility: hidden;
   height: 1em; }
   @media (min-width: 350px) {
@@ -484,20 +485,21 @@ article h2 {
       color: black; }
 
 article.process {
-  padding-top: 4rem; }
+  padding-top: 6rem; }
   article.process .reading {
     visibility: hidden; }
   article.process:first-child {
     padding-top: 1rem; }
-  article.process h1, article.process .shortText {
+  article.process h1, article.process h2, article.process .shortText {
     font-weight: normal;
     color: #172E36;
     font-size: 1rem;
     text-transform: uppercase;
     font-size: 1.5rem; }
+    article.process h1 a, article.process h2 a, article.process .shortText a {
+      color: black; }
   article.process img {
     width: 100%;
-    margin: 1rem;
     display: block; }
   article.process ul.tags li {
     display: inline-block; }
