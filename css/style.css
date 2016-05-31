@@ -482,7 +482,7 @@ article h2 {
       color: black; }
 
 .inStream article {
-  padding-top: 3rem; }
+  padding-top: 4rem; }
   .inStream article:first-child {
     padding-top: 1rem; }
   .inStream article h1, .inStream article .shortText {
@@ -512,7 +512,8 @@ table, tbody, tr {
   text-align: left; }
 
 tr {
-  width: 300%; }
+  width: 300%;
+  padding-bottom: 0.5em; }
 
 td, th {
   display: inline-block; }
