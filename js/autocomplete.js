@@ -22,7 +22,7 @@ $(document).ready(function() {
 	    $("#autocomplete").html(result)
 	}
 	$(document).keydown(function(e){
-            if ($("#searchbar").is(":focus") == false){
+            if ($("#searchBar").is(":focus") == false){
                 $("#searchBar").val("");
                 $("#searchBar").focus();
             }
