@@ -52,7 +52,8 @@ html, body {
   width: 100%; }
 
 html {
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  overflow-x: hidden; }
 
 .pageWrap {
   height: 100%; }
@@ -146,7 +147,8 @@ article h2 {
   left: 0;
   height: 100%;
   width: 100%;
-  position: static; }
+  position: static;
+  overflow: hidden; }
   .landing h1 {
     position: absolute;
     font-weight: bold;
@@ -223,7 +225,7 @@ article h2 {
       color: #FA846C !important;
       font-family: akkurat, helvetica, sans-serif !important;
       background-color: transparent;
-      width: 110%;
+      width: 90%;
       font-size: 3em;
       bottom: -0.4em;
       text-transform: capitalize !important; }
@@ -481,30 +483,32 @@ article h2 {
     .person .intro .process article h2 a {
       color: black; }
 
-.inStream article {
+article.process {
   padding-top: 4rem; }
-  .inStream article:first-child {
+  article.process .reading {
+    visibility: hidden; }
+  article.process:first-child {
     padding-top: 1rem; }
-  .inStream article h1, .inStream article .shortText {
+  article.process h1, article.process .shortText {
     font-weight: normal;
     color: #172E36;
     font-size: 1rem;
     text-transform: uppercase;
     font-size: 1.5rem; }
-  .inStream article img {
+  article.process img {
     width: 100%;
     margin: 1rem;
     display: block; }
-  .inStream article ul.tags li {
+  article.process ul.tags li {
     display: inline-block; }
-    .inStream article ul.tags li a {
+    article.process ul.tags li a {
       text-decoration: none;
       color: #FA846C; }
-      .inStream article ul.tags li a:before {
+      article.process ul.tags li a:before {
         content: "#";
         position: relative;
         left: 0.3rem; }
-  .inStream article .footer .permalink, .inStream article .footer .interactions {
+  article.process .footer .permalink, article.process .footer .interactions {
     display: inline-block; }
 
 table, tbody, tr {
