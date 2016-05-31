@@ -356,7 +356,7 @@ article h2 {
     position: absolute; }
 
 .tagCloud {
-  padding-top: 4em;
+  padding-top: 10em;
   overflow-x: hidden; }
   .tagCloud h2 {
     display: none; }
