@@ -1,7 +1,7 @@
 <div class='knunnav'>
     <ul>
       <li>
-        <a href='/show'>
+        <a href='/pages/show'>
           SHOW
         </a>
       </li>
@@ -11,7 +11,7 @@
         </a>
       </li>
       <li>
-        <a href='/info'>
+        <a href='/pages/info'>
           INFO
         </a>
       </li>
