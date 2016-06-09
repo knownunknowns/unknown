@@ -70,7 +70,7 @@ html {
 
 h1 {
   font-family: akkurat, helvetica, sans-serif;
-  color: #FA846C;
+  color: #f07d44;
   font-size: 3em;
   text-transform: capitalize;
   padding-bottom: 3rem; }
@@ -79,7 +79,7 @@ p {
   padding-bottom: 0.5em; }
 
 a {
-  color: #FA846C;
+  color: #f07d44;
   text-decoration: none; }
 
 h2 {
@@ -104,7 +104,7 @@ article h2 {
   font-size: 2em;
   padding-bottom: 1rem;
   font-weight: normal;
-  color: #FA846C;
+  color: #f07d44;
   text-transform: capitalize;
   line-height: 2.8rem;
   padding-bottom: 1.8 rem; }
@@ -208,7 +208,7 @@ article h2 {
         bottom: -0.5663em;
         font-size: 15em; } }
     .landing h1 a {
-      color: #FA846C;
+      color: #f07d44;
       text-decoration: none; }
   .landing .search {
     overflow-x: hidden; }
@@ -222,7 +222,7 @@ article h2 {
       outline: none !important;
       box-shadow: none !important;
       font-weight: bold;
-      color: #FA846C !important;
+      color: #f07d44 !important;
       font-family: akkurat, helvetica, sans-serif !important;
       width: 90%;
       background-color: rgba(255, 255, 255, 0);
@@ -284,10 +284,10 @@ article h2 {
       .landing .search input:valid + .cursor, .landing .search input:focus + .cursor {
         display: none; }
       .landing .search input:focus + .cursor + #autocomplete {
-        color: #FA846C !important;
+        color: #f07d44 !important;
         visibility: visible; }
       .landing .search input:valid + .cursor + #autocomplete {
-        color: #FA846C !important;
+        color: #f07d44 !important;
         visibility: visible; }
       .landing .search input + .cursor {
         font-size: 3em;
@@ -298,7 +298,7 @@ article h2 {
         display: block;
         height: 1.1em;
         left: 3.4em;
-        border-left: 2px solid #FA846C;
+        border-left: 2px solid #f07d44;
         animation: blink-animation 1s steps(5, start) infinite;
         -moz-animation: blink-animation 1s steps(5, start) infinite;
         -webkit-animation: blink-animation 1s steps(5, start) infinite; }
@@ -506,7 +506,7 @@ article.process {
     display: inline-block; }
     article.process ul.tags li a {
       text-decoration: none;
-      color: #FA846C; }
+      color: #f07d44; }
       article.process ul.tags li a:before {
         content: "#";
         position: relative;
