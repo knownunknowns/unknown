@@ -501,7 +501,8 @@ article.process {
       color: black; }
   article.process img {
     max-width: 100%;
-    display: block; }
+    display: block;
+    height: auto; }
   article.process ul.tags li {
     display: inline-block; }
     article.process ul.tags li a {
